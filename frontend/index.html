@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>MoleMath - Calculadora Química</title>
+    <meta name="description" content="Calculadora química para estudiantes. Masa molar, concentraciones y balance de ecuaciones con pasos detallados." />
+    <meta name="author" content="Harold Ponce" />
+    
+    <meta property="og:title" content="MoleMath - Calculadora Química" />
+    <meta property="og:description" content="Calculadora química para estudiantes con explicaciones paso a paso." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://molemath.app" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MoleMath - Calculadora Química" />
+    <meta name="twitter:description" content="Calculadora química para estudiantes con explicaciones paso a paso." />
+    
+    <meta name="theme-color" content="#3B82F6" />
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  </head>
+  <body>
+    <div id="root">
+      <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background-color: #f9fafb;">
+        <div style="text-align: center;">
+          <div style="display: inline-flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%); border-radius: 8px; padding: 12px; margin-right: 16px;">
+              <svg width="32" height="32" fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h1 style="margin: 0; font-size: 1.5rem; font-weight: 600; color: #1f2937;">MoleMath</h1>
+              <p style="margin: 0; font-size: 0.875rem; color: #6b7280;">Calculadora Química</p>
+            </div>
+          </div>
+          
+          <div style="width: 40px; height: 40px; border: 4px solid #e5e7eb; border-top: 4px solid #3b82f6; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
+          
+          <p style="margin-top: 1rem; font-size: 0.875rem; color: #6b7280;">
+            Cargando...
+          </p>
+        </div>
+      </div>
+      
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        #root {
+          min-height: 100vh;
+        }
+      </style>
+    </div>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

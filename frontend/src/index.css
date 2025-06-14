@@ -1,0 +1,207 @@
+/* ============================================================================
+ * ESTILOS GLOBALES - VERSIÓN LIMPIA
+ * ============================================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+ * ANIMACIONES GLOBALES
+ * ============================================================================ */
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================================================
+ * UTILIDADES PARA COMPONENTES QUÍMICOS
+ * ============================================================================ */
+
+/* Para subscripts y superscripts en fórmulas químicas */
+.chemical-formula {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.chemical-formula sub,
+.chemical-formula sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.chemical-formula sub {
+  bottom: -0.25em;
+}
+
+.chemical-formula sup {
+  top: -0.5em;
+}
+
+/* ============================================================================
+ * CLASES DE ANIMACIÓN REUTILIZABLES
+ * ============================================================================ */
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+/* ============================================================================
+ * MEJORAS DE ACCESIBILIDAD
+ * ============================================================================ */
+
+/* Mejor contraste para usuarios con problemas de visión */
+@media (prefers-contrast: high) {
+  .text-gray-600 {
+    @apply text-gray-800;
+  }
+  
+  .text-gray-500 {
+    @apply text-gray-700;
+  }
+  
+  .border-gray-200 {
+    @apply border-gray-400;
+  }
+}
+
+/* Reducir animaciones para usuarios sensibles al movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-spin {
+    animation: none;
+  }
+}
+
+/* ============================================================================
+ * OPTIMIZACIONES DE RENDIMIENTO
+ * ============================================================================ */
+
+/* Optimizar re-renders para elementos que cambian frecuentemente */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Mejorar el scroll en móviles */
+.smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* ============================================================================
+ * UTILIDADES ESPECÍFICAS DE LA APP
+ * ============================================================================ */
+
+/* Estilo para focus personalizado en inputs químicos */
+.focus-ring-chemical {
+  @apply focus:outline-none focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500;
+}
+
+/* Gradientes para botones importantes */
+.gradient-primary {
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+}
+
+.gradient-primary:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+}
+
+/* Sombras para cards importantes */
+.card-shadow {
+  box-shadow: 
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.input-error {
+  @apply border-red-400 bg-red-50 text-red-900 placeholder-red-400;
+}
+
+.input-error:focus {
+  @apply border-red-500 ring-red-500/20;
+}
+
+.input-success {
+  @apply border-green-400 bg-green-50 text-green-900;
+}
+
+.input-success:focus {
+  @apply border-green-500 ring-green-500/20;
+}
+
+.input-warning {
+  @apply border-yellow-400 bg-yellow-50 text-yellow-900;
+}
+
+.input-warning:focus {
+  @apply border-yellow-500 ring-yellow-500/20;
+}
