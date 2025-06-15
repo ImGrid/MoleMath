@@ -26,15 +26,10 @@
 ## 🛠️ Tecnologías Utilizadas
 
 ### **Frontend**
-- **[React 22](https://reactjs.org/)** - Biblioteca de interfaz de usuario
+- **[React](https://reactjs.org/)** - Biblioteca de interfaz de usuario
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipado estático para JavaScript
 - **[Vite](https://vitejs.dev/)** - Herramienta de construcción rápida
 - **[Tailwind CSS](https://tailwindcss.com/)** - Framework de CSS utilitario
-
-### **Herramientas de Desarrollo**
-- **[ESLint](https://eslint.org/)** - Linter para JavaScript/TypeScript
-- **[Prettier](https://prettier.io/)** - Formateador de código
-- **[React Router](https://reactrouter.com/)** - Enrutamiento del lado del cliente
 
 ### **Datos Químicos**
 - **[Periodic Table JSON](https://github.com/Bowserinator/Periodic-Table-JSON)** - Base de datos de elementos químicos
@@ -111,7 +106,5 @@ La aplicación estará disponible en `http://localhost:5173`
 - **📁 Repositorio**: [https://github.com/ImGrid/MoleMath.git](https://github.com/ImGrid/MoleMath.git)
 
 ---
-
-### 🌟 Si MoleMath te fue útil, ¡no olvides darle una estrella! ⭐
 
 **Hecho con ❤️ para la comunidad científica**
