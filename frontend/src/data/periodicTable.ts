@@ -41,7 +41,6 @@ export const getElementMap = (): ElementMap => {
   }
   return loadedElementMap;
 };
-
 export const getElement = (symbol: string): Element | undefined => {
   const elementMap = getElementMap();
   return elementMap[symbol];
