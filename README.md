@@ -12,8 +12,6 @@
 - [Acerca del Proyecto](#-acerca-del-proyecto)
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
 - [Instalación](#-instalación)
-- [Uso](#-uso)
-- [Calculadoras Disponibles](#-calculadoras-disponibles)
 - [Créditos](#-créditos)
 - [Contacto](#-contacto)
 
@@ -77,46 +75,6 @@ yarn dev
 ### 4. Abrir en el navegador
 
 La aplicación estará disponible en `http://localhost:5173`
-
----
-
-## 🎮 Uso
-
-### 🧮 **Calculadora de Masa Molar**
-
-1. Ingresa una fórmula química (ej: `H2SO4`, `Ca(OH)2`)
-2. El sistema validará automáticamente la fórmula
-3. Haz clic en "Calcular Masa Molar"
-4. Obtén la masa molar con desglose elemental
-5. Utiliza las conversiones automáticas entre gramos, moles y moléculas
-
-### ⚗️ **Calculadora de Concentraciones**
-
-1. Ingresa la fórmula del soluto
-2. Especifica la masa del soluto y volumen de solución
-3. Selecciona el tipo de concentración (Molaridad o Molalidad)
-4. Obtén el resultado con explicaciones paso a paso
-5. Utiliza las herramientas de dilución y preparación de soluciones
-
-### ⚖️ **Balanceador de Ecuaciones**
-
-1. Escribe la ecuación química sin balancear
-2. Selecciona el método de balance (Tanteo o Algebraico)
-3. Haz clic en "Balancear"
-4. Obtén la ecuación balanceada con verificación elemental
-
----
-
-## 🧪 Calculadoras Disponibles
-
-| Calculadora | Estado | Características |
-|-------------|--------|-----------------|
-| 🧮 **Masa Molar** | ✅ Disponible | Cálculo de masa molar, conversiones, composición elemental |
-| ⚗️ **Concentraciones** | ✅ Disponible | Molaridad, molalidad, diluciones, preparación de soluciones |
-| ⚖️ **Balance de Ecuaciones** | ✅ Disponible | Métodos de tanteo y algebraico, verificación elemental |
-| 🌡️ **pH y pOH** | 🚧 Próximamente | Cálculos de acidez y basicidad |
-| ⚡ **Estequiometría** | 🚧 Próximamente | Cálculos de reactivos y productos |
-| 💨 **Gases Ideales** | 🚧 Próximamente | Ecuación PV = nRT y leyes de gases |
 
 ---
 
